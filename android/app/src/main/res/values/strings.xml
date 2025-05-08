@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">compass</string>
-    <string name="title_activity_main">compass</string>
-    <string name="package_name">ionic.compass</string>
-    <string name="custom_url_scheme">ionic.compass</string>
+    <string name="app_name">compass_ionic_angular</string>
+    <string name="title_activity_main">compass_ionic_angular</string>
+    <string name="package_name">ionic.angular.compass</string>
+    <string name="custom_url_scheme">ionic.angular.compass</string>
 </resources>

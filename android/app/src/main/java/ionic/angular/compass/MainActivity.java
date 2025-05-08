@@ -1,4 +1,4 @@
-package ionic.compass;
+package ionic.angular.compass;
 
 import com.getcapacitor.BridgeActivity;
 

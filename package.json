@@ -1,8 +1,8 @@
 {
-  "name": "compass",
-  "version": "0.0.0",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "name": "compass_ionic_angular",
+  "version": "1.0.0",
+  "author": "Sergio Ponce Domínguez",
+  "homepage": "https://github.com/sergio-ponce-dominguez/compass_ionic_angular",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -62,5 +62,13 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.6.3"
-  }
+  },
+  "browserslist": [
+    "Chrome >=79",
+    "ChromeAndroid >=79",
+    "Firefox >=70",
+    "Edge >=79",
+    "Safari >=14",
+    "iOS >=14"
+  ]
 }
