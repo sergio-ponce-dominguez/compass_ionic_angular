@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Compass
-    </ion-title>
+    <ion-title> Compass </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,5 +11,19 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-text>
+    compass event: <br />
+    absolute: {{event?.absolute}} <br />
+    alpha: {{event?.alpha | number : '1.1'}} <br />
+    beta: {{event?.beta | number : '1.1'}} <br />
+    gamma: {{event?.gamma | number : '1.1'}}
+  </ion-text>
+
+  <ion-fab slot="fixed" horizontal="center" vertical="center">
+    <img
+      class="compass-image"
+      src="assets/compass-with-earth-cardinal-points-directions-svgrepo-com.svg"
+      [style.transform]="imageTransform"
+    />
+  </ion-fab>
 </ion-content>
