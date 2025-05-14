@@ -50,6 +50,8 @@ export class CompassPage implements OnInit, OnDestroy {
 }
 
 type TDeviceOrientationEvent = {
+  type?: string;
+
   absolute: boolean;
 
   alpha: number | null;
