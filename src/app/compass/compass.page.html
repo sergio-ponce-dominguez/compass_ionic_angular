@@ -11,14 +11,19 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-text>
-    compass event: <br />
-    absolute: {{event?.absolute}} <br />
-    alpha: {{event?.alpha | number : '1.1'}} <br />
-    beta: {{event?.beta | number : '1.1'}} <br />
-    gamma: {{event?.gamma | number : '1.1'}}
-  </ion-text>
-
+  <div class="event-text">
+    <ion-text>
+      compass event: <br />
+      absolute: {{event?.absolute}} <br />
+      alpha: {{event?.alpha | number : '1.1'}} <br />
+      beta: {{event?.beta | number : '1.1'}} <br />
+      gamma: {{event?.gamma | number : '1.1'}} <br />
+      webkitCompassHeading: {{event?.webkitCompassHeading | number : '1.1'}}
+      <br />
+      webkitCompassAccuracy: {{event?.webkitCompassAccuracy | number : '1.1'}}
+      <br />
+    </ion-text>
+  </div>
   <ion-fab slot="fixed" horizontal="center" vertical="center">
     <img
       class="compass-image"

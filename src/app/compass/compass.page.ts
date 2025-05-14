@@ -27,7 +27,7 @@ import {
 export class CompassPage implements OnInit, OnDestroy {
   constructor(private platform: Platform) {}
 
-  event: DeviceOrientationEvent | null = null;
+  event: TDeviceOrientationEvent | null = null;
   imageTransform = 'rotate(0deg)';
 
   ngOnInit(): void {
@@ -48,3 +48,14 @@ export class CompassPage implements OnInit, OnDestroy {
     this.imageTransform = `rotate(${event.alpha}deg)`;
   };
 }
+
+type TDeviceOrientationEvent = {
+  absolute: boolean;
+
+  alpha: number | null;
+  beta: number | null;
+  gamma: number | null;
+
+  webkitCompassHeading?: number | null;
+  webkitCompassAccuracy?: number | null;
+};
